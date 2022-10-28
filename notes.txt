@@ -1,0 +1,25 @@
+results fo the extraLargeArray: 
+    insert: 767.670666
+    append: 3.198041
+
+
+
+                        insert              append
+______________________________________________________
+tinyArry       |        17.875              56.208
+smallArray     |        35.833              119.5
+mediumArray    |        167.583             134.167
+largeArray     |        8.567042            489.583
+extraLargeArray|        767.670666          3.198041
+
+
+
+Weird pattern. Insert was going up, thne completely 
+dropped at largeArray before sky rocketting in 
+extraLargeArray. Similar but opposite in append, 
+where it was moving in an upward fashion, then at 
+largeArray spiked super high, and dropped to next to 
+nothing at extraLargeArray. But overall, it looks 
+like append scales better with lower numbers, and not 
+as big of a spike. 
+
